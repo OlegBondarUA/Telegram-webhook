@@ -24,11 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = [
-    'https://d41f-5-1-12-217.eu.ngrok.io'
-]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
