@@ -37,11 +37,11 @@ dp.add_handler(MessageHandler(Filters.text & (~Filters.command), handle_message)
 
 
 if __name__ == '__main__':
+
     updater.start_webhook(
         listen='0.0.0.0',
         port=80,
-        url_path=TOKEN,
-        webhook_url='https://dbc4-5-1-12-217.eu.ngrok.io/webhook/' + TOKEN,
+        webhook_url=f'{your_domain}/webhook'
     )
     updater.idle()
 
